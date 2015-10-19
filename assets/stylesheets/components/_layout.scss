@@ -1,0 +1,60 @@
+/* ===========================================================
+   Layout
+   =========================================================== */
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+html {
+  font: $body-font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $light-gray;;
+  color: $black;
+}
+
+/* ===========================================================
+   Container
+   =========================================================== */
+
+.container {
+  @extend %clearfix;
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 90%;
+
+  @media #{$medium} { max-width: 640px; }
+}
+
+/* ===========================================================
+   Grid
+   =========================================================== */
+
+.row {
+  @extend %clearfix;
+  margin-bottom: 3rem;
+  width: 100%;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.column {
+  margin-bottom: 3rem;
+  width: 100%;
+
+  &:last-of-type { margin-bottom: 0; }
+
+  @media #{$medium} {
+    float: left;
+    margin: 0;
+    margin-left: 6%;
+    width: 47%;
+
+    &:first-of-type { margin-left: 0; }
+  }
+}

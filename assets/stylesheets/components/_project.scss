@@ -1,0 +1,211 @@
+/* ===========================================================
+   Project
+   =========================================================== */
+
+.section__title { text-align: center; }
+
+/* ===========================================================
+   Typeface Classification
+   =========================================================== */
+
+.classifactions {
+  background: $blue-gray;
+  color: $white;
+}
+
+/* ===========================================================
+   Typeface Categories
+   =========================================================== */
+
+.categories {
+  background: $light-blue;
+  text-align: center;
+}
+
+.typeface-list {
+  @extend %clearfix;
+  @include clean-list;
+}
+
+.typeface-list__item {
+  border-bottom: 1px solid darken($light-blue, 10%);
+  color: $blue-gray;
+  padding: 3rem 0;
+
+  @media #{$medium} {
+    align-items: center;
+    border-right: 1px solid darken($light-blue, 10%);
+    display: flex;
+    float: left;
+    height: 200px;
+    justify-content: center;
+    padding: 0;
+    width: 50%;
+
+    &:nth-of-type(2n+2) { border-right: 0; }
+  }
+
+  &:last-of-type { border-bottom: 0; }
+}
+
+.typeface-list__title {
+  font-size: 2rem;
+  font-weight: $regular;
+  margin-bottom: 1.5rem;
+}
+
+.typeface-list__font {
+  border-radius: $border-radius;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: .9rem;
+  padding: .2rem .6rem;
+}
+
+.humanist { font-family: "Libre Baskerville", serif; }
+
+.transitional { font-family: "PT Serif", serif; }
+
+.modern { font-family: "Playfair Display", serif; }
+
+.slab { font-family: "Alfa Slab One", cursive; }
+
+.humanist-sans {
+  font-family: "Cabin", sans-serif;
+  line-height: 1.5
+ }
+
+.transitional-sans {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5
+ }
+
+.geometric-sans {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+}
+
+/* ===========================================================
+   Legibility and readability
+   =========================================================== */
+
+.legible-and-readable {
+  background: $red;
+  color: $white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.legible-and-readlbe__title {
+  font: $regular 2.6rem/1.5 "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.legible-and-readable__and {
+  background: darken($red, 4%);
+  border-radius: $circle;
+  display: inline-block;
+  font: $regular 1.2rem "Montserrat", sans-serif;
+  height: 50px;
+  line-height: 50px;
+  margin: 1rem 0;
+  width: 50px;
+}
+
+/* ===========================================================
+   Legibility and readability definitions
+   =========================================================== */
+
+.definitions {
+  background: $white;
+  font-size: 1.1rem;
+}
+
+/* ===========================================================
+   Legibility and readability examples
+   =========================================================== */
+
+// Warning
+
+.example--alert { background: $yellow; }
+
+.warning {
+  color: $black;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  max-width: 270px;
+  text-align: center;
+}
+
+.warning__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Article
+
+.example--article {
+  background: $light-gray url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/paper_fibers.png");
+}
+
+.article {
+  font-family: "Source Serif Pro", serif;
+  margin: 0 auto;
+  max-width: 270px;
+
+  &:last-of-type { margin-bottom: 0; }
+
+  p {
+    margin-bottom: 0;
+    text-align: justify;
+    text-indent: 1.5rem;
+
+    &:last-of-type { margin-bottom: 0; }
+  }
+}
+
+.article__title {
+  font: $bold 1.3rem "Oswald", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article__separator {
+  border: 0;
+  border: 1px solid $gray;
+  margin-bottom: 1rem;
+  max-width: 5rem;
+}
+
+.article--bad {
+  h3 { font-family: "Lobster", cursive; }
+
+  p {
+    font-family: "Lobster", cursive;
+    text-align: left;
+    text-indent: 0;
+  }
+}
+
+/* ===========================================================
+   Vertical Rhythm
+   =========================================================== */
+
+.vertical-rhythm {
+  background: $white url(http://basehold.it/i/24);
+  font-family: "Roboto Slab", serif;
+}
+
+.vertical-rhythm .container { padding: 3rem 0; }
+
+.vertical-rhythm__title {
+  font: $regular 3rem/1.5 "Permanent Marker", cursive;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

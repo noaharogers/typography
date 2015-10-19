@@ -1,0 +1,11 @@
+# Site settings
+title: Typography
+baseurl: "/typography"
+url: "http://noahrogers.com"
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets

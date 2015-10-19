@@ -1,0 +1,29 @@
+// Font Weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+$extra-bold: 800;
+
+// Header Font
+$header-font: $bold 100%/1.5 "Lora", sans-serif;
+
+// Body Font
+$body-font: $regular 100%/1.5 "Lora", sans-serif;
+
+// Colors
+$black:           #333;
+$blue-gray:       #58515f;
+$gray:            #ccc;
+$light-blue:      #f1f0f2;
+$light-gray:      #eee;
+$red:             #a95353;
+$yellow:          #fbda56;
+$white:           #fff;
+
+// Border Radius
+$border-radius:   3px;
+$circle:          50%;
+
+// Medium Screens
+$medium: "(min-width: 600px)";
+$large: "(min-width: 900px)"
