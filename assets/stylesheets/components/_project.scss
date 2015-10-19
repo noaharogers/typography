@@ -51,13 +51,14 @@
 .typeface-list__title {
   font-size: 2rem;
   font-weight: $regular;
+  line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
 .typeface-list__font {
   border-radius: $border-radius;
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: .9rem;
   padding: .2rem .6rem;
 }
@@ -70,20 +71,11 @@
 
 .slab { font-family: "Alfa Slab One", cursive; }
 
-.humanist-sans {
-  font-family: "Cabin", sans-serif;
-  line-height: 1.5
- }
+.humanist-sans { font-family: "Cabin", sans-serif; }
 
-.transitional-sans {
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5
- }
+.transitional-sans { font-family: "Raleway", sans-serif; }
 
-.geometric-sans {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
-}
+.geometric-sans { font-family: "Josefin Sans", sans-serif; }
 
 /* ===========================================================
    Legibility and readability
