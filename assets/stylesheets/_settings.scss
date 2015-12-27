@@ -2,23 +2,25 @@
 $light: 300;
 $regular: 400;
 $bold: 700;
-$extra-bold: 800;
 
 // Header Font
-$header-font: $bold 100%/1.5 "Lora", sans-serif;
+$header-font: $bold 100%/1.5 "Raleway", sans-serif;
 
 // Body Font
-$body-font: $regular 100%/1.5 "Lora", sans-serif;
+$body-font: $regular 100%/1.5 "Raleway", sans-serif;
 
 // Colors
-$black:           #333;
-$blue:            #0376a7;
-$gray:            #ccc;
-$light-blue:      #f1f9fd;
-$light-gray:      #eee;
-$red:             #a95353;
-$yellow:          #fbda56;
+$black:           #272727;
+$blue:            #2087ca;
+$blue-gray:       #626875;
+$green:           #15a984;
+$light-gray:      #fafbfb;
+$light-green:     #cdf9e8;
+$orange:          #ffd368;
 $white:           #fff;
+
+// Border Colors
+$border-light:    #e7ecec;
 
 // Border Radius
 $border-radius:   3px;

@@ -2,21 +2,23 @@
    Header
    =========================================================== */
 
-header { text-align: center; }
-
-header .container { padding: 7rem 0; }
-
-.page-title {
-  font-size: 3rem;
-  font-weight: $regular;
-  margin-bottom: 4rem;
-
-  @media #{$medium} { font-size: 6rem; }
+header {
+  @extend %clearfix;
+  background: $blue-gray;
+  border-bottom: 8px solid $white;
+  border-top: 8px solid darken($blue-gray, 6%);
+  color: $white;
+  text-align: center;
 }
 
-.page-subtitle {
-  font: $regular 1rem "Lato", sans-serif;
-  margin: 0;
+header .container { padding: 6rem 0; }
 
-  @media #{$medium} { font-size: 1.2rem; }
+.project-title {
+  color: $white;
+  display: inline-block;
+  font-weight: $light;
+
+  @media #{$medium} {
+    font-size: 4.738em;
+  }
 }
