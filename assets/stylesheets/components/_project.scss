@@ -8,20 +8,20 @@
 
   li {
     background: lighten($green, 8%);
-    border-bottom: 3px solid $green;
     border-radius: 3px;
+    border-bottom: 4px solid $green;
     color: $white;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: $bold;
     margin-bottom: .5rem;
-    padding: .5rem .5rem .3rem;
+    padding: .7rem 1rem .5rem;
     text-align: center;
     transition: background ease-in-out .2s;
 
-    &.selected { background: $green; }
+    &:last-of-type { margin-bottom: 0; }
 
-    &:last-of-type { margin: 0; }
+    &.selected { background: $green; }
   }
 }
 
@@ -29,26 +29,38 @@
    Typeface Examples
    =========================================================== */
 
-.humanist h3, .humanist p {
+.humanist {
   font-family: 'Libre Baskerville', serif;
+
+  h3 { font-family: 'Libre Baskerville', serif; }
 }
 
-.transitional h3, .transitional p {
+.transitional {
   font-family: 'PT Serif', serif;
+
+  h3 { font-family: 'PT Serif', serif; }
 }
 
-.modern h3, .modern p {
+.modern {
   font-family: 'Playfair Display', serif;
+
+  h3 { font-family: 'Playfair Display', serif; }
 }
 
-.slab h3, .slab p {
+.slab {
   font-family: 'Arvo', serif;
+
+  h3 { font-family: 'Arvo', serif; }
 }
 
-.humanist-sans h3, .humanist-sans p {
+.humanist-sans {
   font-family: 'Cabin', sans-serif;
+
+  h3 { font-family: 'Cabin', sans-serif; }
 }
 
-.geometric-sans h3, .geometric-sans p {
+.geometric-sans {
   font-family: 'Josefin Sans', sans-serif;
+
+  h3 { font-family: 'Josefin Sans', sans-serif; }
 }

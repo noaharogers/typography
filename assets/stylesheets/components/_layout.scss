@@ -25,7 +25,11 @@ body {
    Sections
    =========================================================== */
 
-section { border-bottom: 8px solid $white; }
+section {
+  border-bottom: 8px solid $white;
+
+  h2 { text-align: center; }
+}
 
 .font-vs-typeface {
   background: $orange;
@@ -36,6 +40,7 @@ section { border-bottom: 8px solid $white; }
 
 .typeface-classification {
   background: $light-green;
+  background: linear-gradient(45deg, darken($light-green, 10%) 10%, $light-green 90%);
 
   h3 { text-align: center; }
 }
@@ -46,10 +51,8 @@ section { border-bottom: 8px solid $white; }
 }
 
 .vertical-rhythm {
-  background: $white url("/typography/assets/images/background/pink_rice.png");
+  background: url("/typography/assets/images/background/pink_rice.png");
   border: 0;
-
-  h2 { text-align: center; }
 }
 
 /* ===========================================================
@@ -94,7 +97,7 @@ section { border-bottom: 8px solid $white; }
 }
 
 .one-third {
-width: 100%;
+  width: 100%;
 
   @media #{$medium} {
     margin-bottom: 0;
@@ -106,6 +109,8 @@ width: 100%;
 }
 
 .two-thirds {
+  width: 100%;
+
   @media #{$medium} {
     margin-bottom: 0;
     margin-left: 6%;
