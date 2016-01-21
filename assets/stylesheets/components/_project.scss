@@ -1,66 +1,140 @@
 /* ===========================================================
-   Typeface Buttons
-   =========================================================== */
-
-.typefaces {
-  @extend %clearfix;
-  @include clean-list;
-
-  li {
-    background: lighten($green, 8%);
-    border-radius: 3px;
-    border-bottom: 4px solid $green;
-    color: $white;
-    cursor: pointer;
-    font-size: .9rem;
-    font-weight: $bold;
-    margin-bottom: .5rem;
-    padding: .7rem 1rem .5rem;
-    text-align: center;
-    transition: background ease-in-out .2s;
-
-    &:last-of-type { margin-bottom: 0; }
-
-    &.selected { background: $green; }
-  }
-}
-
-/* ===========================================================
-   Typeface Examples
+   Typefaces
    =========================================================== */
 
 .humanist {
-  font-family: 'Libre Baskerville', serif;
-
-  h3 { font-family: 'Libre Baskerville', serif; }
+  font-family: "Libre Baskerville", serif;
+  font-weight: $regular;
 }
 
-.transitional {
-  font-family: 'PT Serif', serif;
+.transitional { font-family: "PT Serif", serif; }
 
-  h3 { font-family: 'PT Serif', serif; }
+.modern { font-family: "Playfair Display", serif; }
+
+.slab { font-family: "Arvo", serif; }
+
+.humanist-sans { font-family: "Cabin", sans-serif; }
+
+.transitional-sans { font-family: "Lato", sans-serif; }
+
+.geometric-sans { font-family: "Josefin Sans", sans-serif; }
+
+.display { font-family: "Lobster", cursive; }
+
+.handwriting {
+  font-family: "Permanent Marker", cursive;
+  font-weight: $regular;
 }
 
-.modern {
-  font-family: 'Playfair Display', serif;
+/* ===========================================================
+   Typeface Categories
+   =========================================================== */
 
-  h3 { font-family: 'Playfair Display', serif; }
+.typeface-categories__title {
+  font-size: 2rem;
+  text-align: center;
 }
 
-.slab {
-  font-family: 'Arvo', serif;
-
-  h3 { font-family: 'Arvo', serif; }
+.typeface-list {
+  @extend %clearfix;
+  @include clean-list;
 }
 
-.humanist-sans {
-  font-family: 'Cabin', sans-serif;
+.typeface-list__item {
+  background: darken($green, 6%);
+  border-radius: $border-radius;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
 
-  h3 { font-family: 'Cabin', sans-serif; }
+  &:last-of-type { margin-bottom: 0; }
+
+  @media #{$medium} {
+    float: left;
+    margin-left: 3%;
+    width: 48.5%;
+
+    &:nth-of-type(odd) { margin-left: 0; }
+  }
+
+  @media #{$large} {
+    width: 31.33%;
+
+    &:nth-of-type(odd) { margin-left: 3%; }
+    &:nth-of-type(3n+1) { margin-left: 0; }
+  }
 }
 
-.geometric-sans {
-  font-family: 'Josefin Sans', sans-serif;
-
-  h3 { font-family: 'Josefin Sans', sans-serif; }
+.typeface-list__title {
+  font-size: 1.2rem;
+  font-weight: $regular;
+  margin-bottom: 0;
+  padding: .8rem 0 .6rem;
+  position: relative;
+  text-shadow: 1px 1px 1px $gray;
 }
+
+.typeface-list__font {
+  background: darken($green, 8%);
+  color: lighten($green, 35%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: $regular;
+  font-size: .7rem;
+  padding: .3rem 0;
+  width: 100%;
+}
+
+/* ===========================================================
+   Examples
+   =========================================================== */
+
+ .warning {
+   background: $yellow;
+   border-radius: $border-radius;
+   font-size: .9rem;
+   padding: 1rem;
+   text-align: center;
+
+   h3 {
+     font-size: .9rem;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+   }
+ }
+
+.warning--bad {
+  font-family: "Lobster", cursive;
+  font-weight: $bold;
+}
+
+ .book {
+   background: $white;
+   border-radius: $border-radius;
+   font-family: "PT Serif", serif;
+   font-size: .8rem;
+   padding: 2rem;
+   right: 0;
+   text-align: justify;
+
+   h2 { text-align: center; }
+
+   h3 {
+     font-weight: $regular;
+     font-size: .7rem;
+     margin: 0;
+     margin-top: 1.5rem;
+     text-align: center;
+   }
+
+   @media #{$medium} {
+     position: absolute;
+     width: 47.5%;
+   }
+ }
+
+ .book--bad {
+   font-family: "Abril Fatface", cursive;
+   left: 0;
+   text-align: left;
+ }

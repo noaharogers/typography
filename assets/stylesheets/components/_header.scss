@@ -4,20 +4,16 @@
 
 header {
   @extend %clearfix;
-  background: $white url("/typography/assets/images/background/stardust.png");
-  border-bottom: 8px solid $white;
+  background: $dark-gray url("/typography/assets/images/background/stardust.png");
   color: $white;
   text-align: center;
-}
 
-header .container { padding: 7rem 0; }
+  .container { padding: 10rem 0; }
 
-.project-title {
-  color: $white;
-  display: inline-block;
-  font-weight: $light;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: $light;
 
-  @media #{$medium} {
-    font-size: 4.738em;
+    @media #{$medium} { font-size: 5rem; }
   }
 }

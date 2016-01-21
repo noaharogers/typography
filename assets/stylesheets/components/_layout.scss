@@ -11,48 +11,77 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media #{$medium} { font-size: 20px; }
 }
 
 body {
-  background: $light-gray;
   color: $black;
-  font-weight: $light;
 }
 
 /* ===========================================================
    Sections
    =========================================================== */
 
-section {
-  border-bottom: 8px solid $white;
-
-  h2 { text-align: center; }
-}
-
 .font-vs-typeface {
-  background: $orange;
-  color: darken($orange, 50%);
-
-  h2 { text-align: center; }
+  border-top: 2px solid darken($light-gray, 5%);
+  background: $light-gray;
 }
 
-.typeface-classification {
-  background: $light-green;
-  background: linear-gradient(45deg, darken($light-green, 10%) 10%, $light-green 90%);
-
-  h3 { text-align: center; }
-}
-
-.legible-and-readable {
-  background: $blue;
+.typeface-categories {
+  border-top: 2px solid darken($green, 5%);
+  background: $green;
   color: $white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: $bold;
+  text-align: center;
+
+  h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 3.333rem;
+  }
+}
+
+.legible-and-readable--warning {
+  border-top: 4px dotted darken($yellow, 5%);
+  background: lighten($yellow, 8%);
+
+  h4 { color: $black; }
+}
+
+.legible-and-readable--book {
+  border-top: 2px solid darken($blue-gray, 5%);
+  background: $blue-gray;
+  overflow: hidden;
+
+  @media #{$medium} {
+    height: 592px;
+  }
+
+  .container {
+
+    @media #{$medium} {
+      position: relative;
+    }
+  }
+}
+
+.legible-and-readable__title {
+  color: $white;
+  font-weight: $light;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .vertical-rhythm {
-  background: url("/typography/assets/images/background/pink_rice.png");
-  border: 0;
+  background: url(http://basehold.it/i/30);
+  font-family: "Roboto Slab", serif;
+
+  .container { padding: 3rem 0; }
+
+  h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: $regular;
+    text-align: center;
+  }
 }
 
 /* ===========================================================
@@ -74,7 +103,7 @@ section {
 
 .row {
   @extend %clearfix;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   width: 100%;
 
   &:last-of-type { margin-bottom: 0; }
@@ -82,13 +111,13 @@ section {
 
 .column {
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
 
   @media #{$medium} {
     margin-bottom: 0;
-    margin-left: 6%;
-    width: 47%;
+    margin-left: 5%;
+    width: 47.5%;
 
     &:first-of-type { margin-left: 0; }
   }
@@ -102,7 +131,7 @@ section {
   @media #{$medium} {
     margin-bottom: 0;
     margin-left: 6%;
-    width: 30%;
+    width: 31%;
 
     &:first-of-type { margin-left: 0; }
   }
@@ -118,6 +147,29 @@ section {
 
     &:first-of-type { margin-left: 0; }
   }
+}
+
+/* ===========================================================
+   Buttons
+   =========================================================== */
+
+.button {
+  border-radius: $border-radius;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  margin: 3rem auto 0;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+
+.primary {
+  background: $blue;
+  color: $white;
+  font-weight: $bold;
+
+  &:hover { background: darken($blue, 5%); }
 }
 
 /* ===========================================================
