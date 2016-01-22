@@ -21,11 +21,6 @@ body {
    Sections
    =========================================================== */
 
-.font-vs-typeface {
-  border-top: 2px solid darken($light-gray, 5%);
-  background: $light-gray;
-}
-
 .typeface-categories {
   border-top: 2px solid darken($green, 5%);
   background: $green;
@@ -50,8 +45,7 @@ body {
 }
 
 .legible-and-readable--warning {
-  border-top: 4px dotted darken($yellow, 5%);
-  background: lighten($yellow, 8%);
+  background: $white;
 
   h4 { color: $black; }
 }
